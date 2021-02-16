@@ -1,0 +1,12 @@
+<h1>My Tasks</h1>
+
+<ul>
+<% @tasks.each do |task| %>
+  <li><%= link_to task.title, task_path(task["id"]) %> <i class="far fa-trash-alt"></i></li>
+<% end %>
+</ul>
+
+
+
+
+<%= link_to '<i class="fas fa-plus"></i> Add a new task', new_task_path %>
