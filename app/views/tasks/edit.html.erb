@@ -7,3 +7,8 @@
 <%= f.text_field :details %>
 <%= f.submit %>
 <% end %>
+
+<i class="fas fa-undo-alt"></i> <%= link_to 'Back to list', tasks_path %>
+
+
+<input type="checkbox"><%= link_to 'Completed', edit_task_path %>
